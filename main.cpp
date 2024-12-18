@@ -1,13 +1,16 @@
 #include <iostream>
+#include "array.h"
+using namespace std;
 
-int main(){
-	const int size{5};
-	int massive[size]{5,1,2,6,1};
-	
-	int i_min{}, i_max{};
-	// i_min = min_index(massive,size);
-	// i_max = max_index(massive,size);
-	std :: cout << "i_min: " << i_min << "\ti_max: " << i_max << '\n';
-	
-	return 0;
+int main() {
+    const int size{5};
+    int array[] = {5, 1, 2, 6, 1};
+
+    cout << "Максимальное чисел: " << max(2, 6) << "\n";
+    cout << "Минимальное чисел: " << min(2, 6) << "\n";
+    
+    cout << "Индекс минимального элемента: " << min_index(array, size) << "\n";
+    cout << "Индекс максимального элемента: " << max_index(array, size) << "\n";
+
+    return 0;
 }
