@@ -1,5 +1,12 @@
 #include "array.h"
 
+int sum(int* massive, int size, int begin, int end) {
+    int total = 0;
+    for (int i = begin; i < end && i < size; i++) {
+        total += massive[i];
+    }
+    return total;
+}
 int max(int left, int right) {
     return (left > right) ? left : right;
 }
